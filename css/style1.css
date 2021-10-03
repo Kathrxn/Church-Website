@@ -9,7 +9,7 @@ body {
 }
 
 .carousel-inner{
-  max-height: 30rem!important;
+  max-height: 40rem!important;
 }
 
 .carousel-item-next,
@@ -27,7 +27,7 @@ body {
 .carousel-caption{
   transform: translateY(-50%);
     bottom: initial;
-    top: 40%;
+    top: 50%;
 }
 
 .bg-custom{
@@ -77,6 +77,12 @@ body {
   }
 }
 
+@media (min-width: 1650px) {
+  .carousel-caption{
+    visibility: hidden;
+  }
+}
+
 
 /*-- Bootstrap Mobile Gutter Fix --*/
 .row, .container-fluid {
@@ -103,6 +109,9 @@ body {
    --main-cast-shadow: 0px 3px 12px rgba(0, 0, 0, 0.08), 0px 3px 6px
 }
 
+.contact-line{
+  margin-bottom: 0.3rem!important;
+}
 
 .attribution {
     font-size: 11px; text-align: center;
@@ -124,6 +133,18 @@ h1:last-of-type {
 @media (max-width: 400px) {
     h1 {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .fa-clock {
+       visibility: hidden;
+    }
+    .fa-phone {
+       visibility: hidden;
+    }
+    .fa-church {
+       visibility: hidden;
     }
 }
 
